@@ -108,3 +108,86 @@ button{
     /* margin: 20px;
     padding: 20px; */
 }
+.box1{
+    background-image: url(img/woman.jpg);
+    width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+.box2{
+    background-image: url(img/anime.jpg);
+    width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+}
+.box3{
+   background-image: url(img/battery__f9km4l6jlv6u_xlarge.jpg);
+   width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+}
+.box4{
+    background-image: url(img/innovation__b03hhgj3xx9e_xlarge.jpg);
+    width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+}
+.box5{
+    background-image: url(img/afro.jpg);
+    width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+.box6{
+    background-image: url(img/night.jpg);
+    width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+}
+.box7{
+    background-image: url(img/apple\ holder.jpg);
+    width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+}
+.box8{
+    background-image: url(img/white\ iPhone.jpg);
+    width:28%;
+    height: 770px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+}
+.container2{
+    width:100%;
+    overflow:auto;
+    text-align: justify;
+    margin:auto;
+    padding-left: 30px;
+    border-radius: 20px;
+    
+}
+
+.pic1{
+    background-image: url(img/frame.png);
+    width:  auto;
+    height: 570px;
+    border-radius: 30px;
+   margin: 100px;
+}
