@@ -1,84 +1,37 @@
 body{
-    text-align: center;
-    margin: 0px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     background-image:url(img/portfolio.jpg);
+    color: white;
 }
-
-.navbar ul{
-    list-style-type: none;
+form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 30px;
+  
+}
+fieldset{
+    padding: 40px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+fieldset a{
     float: right;
-    padding-top: 30px;
-}
-.navbar ul a{
-   text-decoration: none;
-   color: white;
-   padding: 50px;
- 
-}
-.navbar ul li{
-    display: inline-block;
-}
-
-.navbar a:hover{
-    text-decoration: underline;
-    padding: 5px;
-    margin: 5px;
-    color: pink;
-    transition: 0.5s;
-}
-
-button{
-   font-size: 15px;
-   padding: 20px;
-   float: right;
-   margin: 20px;
-   background-color: pink;
-   color:white;
-   border-radius: 25px;
-   border-color: white;
-}
-.button1{
-    background-color: black;
-    float: left;
-    border: 2px solid pink;
+    color: black;
     text-decoration: none;
 }
-
-.button1 a{
-    text-decoration: none; 
-    color: white;
+fieldset a:hover{
+    text-decoration: underline;
 }
-.button1:hover{
-    background-color:pink; 
-      color: white;
-    border: white;
-    }
-
+button{
+    background-color: rgba(234, 189, 196);
+   padding: 15px;
+    border-radius: 35px;
+    color: black;
+    width: 150px;
+    cursor: pointer;
+}
 button:hover{
-   background-color: black; 
-   color: pink;
-}
-
-.logo{
-    font-size: 40px;
-    float: right;
-    color: white;
-}
-.text{
-    float: left;
-    text-align: justify;
-    color: white;
-}
-
- i{
-    color: white;
-    padding: 10px;
-    border: 1.5px solid white;
-    border-radius: 15px;
-    float: left;
-    margin: 5px;
-}
-i:hover{
-    background-color: pink;
+    border: 2px solid black;
+    border-radius:35px ;
+    background-color: rgba(255, 255, 255);
 }
