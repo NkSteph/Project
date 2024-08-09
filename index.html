@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -11,19 +11,23 @@
     <form action="#">
         <fieldset>
           <center> <h3>Log In</h3></center> 
-            <label for="email" style="border: none;">Username</label>
+            <label for="email" style="border: none;">Email</label>
             <br><br>
-            <input type="email" name="email" placeholder="example@gmail.com" required style="border: none;  ">
+            <div class="email">
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" value="" class="email" required ;>
+        </div>
 <hr>
 <br>
             <label for="password" style="border: none;">Password</label>
             <br><br>
-            <input type="password" name="password" placeholder="Password" required style="border: none;">
+            <div class="password">
+            <input type="password" name="password" placeholder="Password" value=""  id="password"  required style="border: none;">
+        </div>
             <hr>
             <br>
             <a href="#">Forgot password?</a>
             <br><br>
-            <center><button onclick="login()">LOG IN</button></center>
+            <center><button class="submit">LOG IN</button></center>
             <P>Or Sign up using</P>
             <center>
             <i class="fa fa-facebook-square" style="font-size: 30px;  color: rgb(39, 153, 247);"></i>
@@ -32,6 +36,6 @@
         </center>
         </fieldset>
     </form>
-    
+    <script type="module" src="script.js"></script>
 </body>
 </html>
