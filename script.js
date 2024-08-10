@@ -1,4 +1,4 @@
-
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
@@ -7,21 +7,40 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/fireba
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAOi9tUJ1CzzbK0TX9FDWBzWWV46UzU-DQ",
-  authDomain: "login-43cfb.firebaseapp.com",
-  projectId: "login-43cfb",
-  storageBucket: "login-43cfb.appspot.com",
-  messagingSenderId: "693485979181",
-  appId: "1:693485979181:web:2ae50d8f1567b83bb21aa4"
+  apiKey: "AIzaSyCVO2PGQFYUunYc6QeTSckrZD0sNy1pcc8",
+  authDomain: "register-56323.firebaseapp.com",
+  projectId: "register-56323",
+  storageBucket: "register-56323.appspot.com",
+  messagingSenderId: "717246498078",
+  appId: "1:717246498078:web:4109ec4938f8beacc5750f"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const login = document.getElementById("submit");
+//const analyitcs = getAnalytics(app);
+const register = document.getElementById("submit");
+const auth = getAuth();
 
-login.addEventListener("click", (event) => {
-    event.preventDefault();
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    console.log(email,password);
-    } )
+register.addEventListener("click", (event) => {
+  event.preventDefault();
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+
+  const auth = getAuth();
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      alert("loged in")
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert(errorCode)
+      console.log(errorMessage)
+    });
+  console.log(email, password);
+  window.location.href = "portfolio.html "
+
+})
